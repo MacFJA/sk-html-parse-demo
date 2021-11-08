@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang='en' class="theme-default typo-default">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<meta name='theme-color' content='#ff3e00'>
+
+	<base href='/'>
+
+	<link rel='stylesheet' href='global.css'>
+	<link rel='stylesheet' href='prism.css'>
+	<link rel='manifest' href='manifest.json'>
+	<link rel='icon' type='image/png' href='favicon.png'>
+
+	<meta name='twitter:card' content='summary_large_image'>
+	<meta name='twitter:site' content='@sveltejs'>
+	<meta name='twitter:creator' content='@sveltejs'>
+	<meta name='twitter:image' content='https://svelte.dev/images/twitter-card.png'>
+	<meta name='og:image' content='https://svelte.dev/images/twitter-card.png'>
+
+	<title>Svelte • Cybernetically enhanced web apps</title><meta name="twitter:title" content="Svelte" data-svelte="svelte-wry75o"><meta name="twitter:description" content="Cybernetically enhanced web apps" data-svelte="svelte-wry75o"><meta name="Description" content="Cybernetically enhanced web apps" data-svelte="svelte-wry75o">
+
+		
+
+		<link rel="modulepreload" href="/_app/start-9b993471.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-58f7c5d5.js">
+		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-d98cd7c0.js">
+		<link rel="modulepreload" href="/_app/chunks/stores-14270279.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-40aa2d13.js">
+		<link rel="modulepreload" href="/_app/chunks/ReplWidget-c9d2248e.js">
+		<link rel="modulepreload" href="/_app/chunks/examples-49b6843e.js">
+		<link rel="modulepreload" href="/_app/chunks/InputOutputToggle-a35ba934.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-123f37e5.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-ec07ec69.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-1844f575.css">
+		<link rel="stylesheet" href="/_app/assets/ReplWidget-0dfae16b.css">
+		<link rel="stylesheet" href="/_app/assets/InputOutputToggle-fc814be2.css">
+
+		<script type="module">
+			import { start } from "/_app/start-9b993471.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: "svelte.dev",
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-d98cd7c0.js"),
+						import("/_app/pages/index.svelte-40aa2d13.js")
+					],
+					page: {
+						host: "svelte.dev", // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+</head>
+<body>
+	<div id='svelte'>
+
+
+<div style="display: none">
+	<svg><symbol id="arrow-left" class="icon" viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></symbol><symbol id="arrow-right" class="icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></symbol><symbol id="arrow-up" class="icon" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></symbol><symbol id="arrow-down" class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></symbol><symbol id="check" class="icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></symbol><symbol id="close" class="icon" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></symbol><symbol id="download" class="icon" viewBox="0 0 24 24"><path d="M21 15V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V15"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></symbol><symbol id="edit" class="icon" viewBox="0 0 24 24"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon></symbol><symbol id="github" class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></symbol><symbol id="git-branch" class="icon" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></symbol><symbol id="log-in" class="icon" viewBox="0 0 24 24"><path d="M15 3H19A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H15"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" y1="12" x2="3" y2="12"></line></symbol><symbol id="maximize" class="icon" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></symbol><symbol id="maximize-2" class="icon" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></symbol><symbol id="menu" class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></symbol><symbol id="message-square" class="icon" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></symbol><symbol id="minus" class="icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line></symbol><symbol id="plus" class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></symbol><symbol id="save" class="icon" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></symbol><symbol id="link" class="icon" viewBox="0 0 24 24"><path d="M9,7L6,7A2 2 0 0 0 6,17L9,17"></path><path d="M15,7L18,7A2 2 0 0 1 18,17L15,17"></path><path d="M7,12L17,12"></path></symbol><symbol id="chevron" class="icon" viewBox="0 0 24 24"><path d="M2,7 L12,17 L20,7"></path></symbol></svg></div>
+
+
+
+
+
+<header class="svelte-1txnqye visible"><nav class="svelte-1txnqye"><a rel="prefetch" href="." class="home svelte-1txnqye" title="Homepage" style="background-image: url(svelte-logo-horizontal.svg)">Home</a>
+
+		
+
+		<ul class="primary svelte-1txnqye"><li class="hide-if-desktop svelte-1txnqye active"><a rel="prefetch" href="." class="svelte-1txnqye">Home</a></li>
+			<li><a rel="prefetch" href="tutorial">Tutorial</a></li>
+		<li><a rel="prefetch" href="docs">Docs</a></li>
+		<li><a rel="prefetch" href="examples">Examples</a></li>
+		<li><a rel="prefetch" href="repl">REPL</a></li>
+		<li><a rel="prefetch" href="blog">Blog</a></li>
+		<li><a rel="prefetch" href="faq">FAQ</a></li>
+
+		<li><a href="https://kit.svelte.dev">SvelteKit</a></li>
+
+		<li><a href="chat" title="Discord Chat">
+
+
+
+<svg class="icon svelte-5yec89" width="20" height="20"><use xlink:href="#message-square"></use></svg></a></li>
+
+		<li><a href="https://github.com/sveltejs/svelte" title="GitHub Repo">
+
+
+
+<svg class="icon svelte-5yec89" width="20" height="20"><use xlink:href="#github"></use></svg></a></li></ul></nav></header>
+
+<main class="svelte-1ohgwbo">
+
+<h1 class="visually-hidden">Svelte</h1>
+
+
+
+
+<img alt="Svelte logo" src="svelte-logo-outline.svg" class="parallax svelte-1inoott" style="transform: translate(0, 0px)">
+
+<section class="hero svelte-1u1foo2"><img alt="Svelte logotype" class="logotype svelte-1u1foo2" src="svelte-logotype.svg">
+	<h3 class="svelte-1u1foo2">Cybernetically enhanced web apps</h3></section>
+
+<section class="svelte-1ojx4sy"><div class="blurb svelte-1377vhn"><div class="box svelte-1377vhn" style="background: var(--prime); grid-area: one;"><a href="blog/write-less-code" slot="one"><h2>Write less code</h2>
+		<p>Build boilerplate-free components using languages you already know — HTML, CSS and JavaScript</p>
+
+		<span class="learn-more">learn more</span></a></div>
+
+		<div class="box svelte-1377vhn" style="background: var(--flash); grid-area: two;"><a href="blog/virtual-dom-is-pure-overhead" slot="two"><h2>No virtual DOM</h2>
+		<p>Svelte compiles your code to tiny, framework-less vanilla JS — your app starts fast and stays fast</p>
+
+		<span class="learn-more">learn more</span></a></div>
+
+		<div class="box svelte-1377vhn" style="background: var(--second); grid-area: three;"><a href="blog/svelte-3-rethinking-reactivity" slot="three"><h2>Truly reactive</h2>
+		<p>No more complex state management libraries — Svelte brings reactivity to JavaScript itself</p>
+
+		<span class="learn-more">learn more</span></a></div>
+
+		<div class="what svelte-1377vhn" style="grid-area: what;"><div class="description" slot="what"><p>Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the <em>browser</em>, Svelte shifts that work into a <em>compile step</em> that happens when you build your app.</p>
+
+		<p>Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes.</p>
+
+		<p>We&#39;re proud that Svelte was recently voted the <a href="https://insights.stackoverflow.com/survey/2021#section-most-loved-dreaded-and-wanted-web-frameworks">most loved web framework</a> with the <a href="https://2020.stateofjs.com/en-US/technologies/front-end-frameworks/">most satisfied developers</a> in a pair of industry surveys. We think you&#39;ll love it too. <a href="blog/svelte-3-rethinking-reactivity">Read the introductory blog post</a> to learn more.</p></div></div>
+
+		<div class="how svelte-1377vhn" style="grid-area: how;"><div style="grid-area: start; display: flex; flex-direction: column; min-width: 0" slot="how"><pre class="language-bash" style="margin: 0 0 1em 0; min-width: 0; min-height: 0">npx degit <a href="https://github.com/sveltejs/template" style="user-select: initial;">sveltejs/template</a> my-svelte-project
+<span class="token comment"># or download and extract <a href="https://github.com/sveltejs/template/archive/master.zip">this .zip file</a></span>
+cd my-svelte-project
+<span class="token comment"># to use <a href="blog/svelte-and-typescript">TypeScript</a> run:</span>
+<span class="token comment"># node scripts/setupTypeScript.js</span>
+
+npm install
+npm run dev
+		</pre>
+
+		<p style="flex: 1">See the <a href="blog/the-easiest-way-to-get-started">quickstart guide</a> for more information.</p>
+
+		<p class="cta"><a sveltekit:prefetch href="tutorial">Learn Svelte</a></p></div></div></div></section>
+
+<div class="examples svelte-4powvv"><section class="svelte-1ojx4sy"><div class="example svelte-1t516hp"><p>Svelte components are built on top of HTML. Just add data.</p>
+
+		<div class="repl-container svelte-1t516hp"><div class="svelte-1c44y5p"></div></div></div></section>
+
+	<section class="svelte-1ojx4sy"><div class="example svelte-1t516hp"><p>CSS is component-scoped by default — no more style collisions or specificity wars. Or you can <a href="/blog/svelte-css-in-js">use your favourite CSS-in-JS library</a>.</p>
+
+		<div class="repl-container svelte-1t516hp"><div class="svelte-1c44y5p"></div></div></div></section>
+
+	<section class="svelte-1ojx4sy"><div class="example svelte-1t516hp"><p>Trigger efficient, granular updates by assigning to local variables. The compiler does the rest.</p>
+
+		<div class="repl-container svelte-1t516hp"><div class="svelte-1c44y5p"></div></div></div></section>
+
+	<section class="svelte-1ojx4sy"><div class="example svelte-1t516hp"><p>Build beautiful UIs with a powerful, performant transition engine built right into the framework.</p>
+
+		<div class="repl-container svelte-1t516hp"><div class="svelte-1c44y5p"></div></div></div></section></div>
+
+<section class="svelte-1ojx4sy"><h3>Who&#39;s using Svelte?</h3>
+
+	<div class="logos svelte-34jlfk"><a target="_blank" rel="noopener" href="https://global.rakuten.com/corp/" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/rakuten.svg" alt="Rakuten logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://godaddy.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/godaddy.svg" alt="GoDaddy logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://fusioncharts.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/fusioncharts.svg" alt="FusionCharts logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://avast.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/avast.svg" alt="Avast logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://www.se.com" style=" background-color: #3dcd58; " class="svelte-34jlfk"><img src="/whos-using-svelte/Schneider_Electric.svg" alt="Schneider Electric" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://www.alaskaair.com/" style="background-color: #01426a;" class="svelte-34jlfk"><img src="/whos-using-svelte/alaskaairlines.svg" alt="Alaska Airlines logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://transloadit.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/transloadit.svg" alt="Transloadit" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://1password.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/1password.svg" alt="1Password logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://squareup.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/square.svg" alt="Square" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://nytimes.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/nyt.svg" alt="The New York Times logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://chess.com" style="background-color: #312e2b;" class="svelte-34jlfk"><img src="/whos-using-svelte/chess.svg" alt="Chess.com logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://www.ibm.com/" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/ibm.svg" alt="IBM logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://razorpay.com" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/razorpay.svg" alt="Razorpay logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://www.philips.co.uk" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/philips.svg" alt="Philips logo" loading="lazy" class="svelte-34jlfk">
+				
+		</a><a target="_blank" rel="noopener" href="https://media.lesechos.fr/infographie" style="" class="svelte-34jlfk"><img src="/whos-using-svelte/les-echos.svg" alt="Les Echos" loading="lazy" class="svelte-34jlfk">
+				
+		</a>
+</div></section>
+
+<section class="svelte-1ojx4sy"><h3>Supporters</h3>
+
+	<p>Svelte is free and open source software, made possible by the work of hundreds of volunteers and donors. <a href="https://github.com/sveltejs/svelte">Join us</a> or <a href="https://opencollective.com/svelte">give</a>!</p>
+
+	<h3>Contributors</h3>
+
+	<a class="contributor svelte-1a6945s" style="background-position: 0% 0" href="https://github.com/Rich-Harris">Rich-Harris
+	</a><a class="contributor svelte-1a6945s" style="background-position: 0.2331002331002331% 0" href="https://github.com/Conduitry">Conduitry
+	</a><a class="contributor svelte-1a6945s" style="background-position: 0.4662004662004662% 0" href="https://github.com/tanhauhau">tanhauhau
+	</a><a class="contributor svelte-1a6945s" style="background-position: 0.6993006993006993% 0" href="https://github.com/benmccann">benmccann
+	</a><a class="contributor svelte-1a6945s" style="background-position: 0.9324009324009324% 0" href="https://github.com/dummdidumm">dummdidumm
+	</a><a class="contributor svelte-1a6945s" style="background-position: 1.1655011655011656% 0" href="https://github.com/Swatinem">Swatinem
+	</a><a class="contributor svelte-1a6945s" style="background-position: 1.3986013986013985% 0" href="https://github.com/jacwright">jacwright
+	</a><a class="contributor svelte-1a6945s" style="background-position: 1.6317016317016317% 0" href="https://github.com/lukeed">lukeed
+	</a><a class="contributor svelte-1a6945s" style="background-position: 1.8648018648018647% 0" href="https://github.com/mindrones">mindrones
+	</a><a class="contributor svelte-1a6945s" style="background-position: 2.097902097902098% 0" href="https://github.com/mrkishi">mrkishi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 2.331002331002331% 0" href="https://github.com/ekhaled">ekhaled
+	</a><a class="contributor svelte-1a6945s" style="background-position: 2.5641025641025643% 0" href="https://github.com/pngwn">pngwn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 2.797202797202797% 0" href="https://github.com/antony">antony
+	</a><a class="contributor svelte-1a6945s" style="background-position: 3.0303030303030303% 0" href="https://github.com/EmilTholin">EmilTholin
+	</a><a class="contributor svelte-1a6945s" style="background-position: 3.2634032634032635% 0" href="https://github.com/zxbodya">zxbodya
+	</a><a class="contributor svelte-1a6945s" style="background-position: 3.4965034965034967% 0" href="https://github.com/btk5h">btk5h
+	</a><a class="contributor svelte-1a6945s" style="background-position: 3.7296037296037294% 0" href="https://github.com/jches">jches
+	</a><a class="contributor svelte-1a6945s" style="background-position: 3.9627039627039626% 0" href="https://github.com/d3sandoval">d3sandoval
+	</a><a class="contributor svelte-1a6945s" style="background-position: 4.195804195804196% 0" href="https://github.com/tivac">tivac
+	</a><a class="contributor svelte-1a6945s" style="background-position: 4.428904428904429% 0" href="https://github.com/PaulBGD">PaulBGD
+	</a><a class="contributor svelte-1a6945s" style="background-position: 4.662004662004662% 0" href="https://github.com/GarrettGeorge">GarrettGeorge
+	</a><a class="contributor svelte-1a6945s" style="background-position: 4.895104895104895% 0" href="https://github.com/btakita">btakita
+	</a><a class="contributor svelte-1a6945s" style="background-position: 5.128205128205129% 0" href="https://github.com/FWeinb">FWeinb
+	</a><a class="contributor svelte-1a6945s" style="background-position: 5.361305361305361% 0" href="https://github.com/geoffrich">geoffrich
+	</a><a class="contributor svelte-1a6945s" style="background-position: 5.594405594405594% 0" href="https://github.com/pushkine">pushkine
+	</a><a class="contributor svelte-1a6945s" style="background-position: 5.827505827505828% 0" href="https://github.com/halfnelson">halfnelson
+	</a><a class="contributor svelte-1a6945s" style="background-position: 6.0606060606060606% 0" href="https://github.com/evs-chris">evs-chris
+	</a><a class="contributor svelte-1a6945s" style="background-position: 6.293706293706293% 0" href="https://github.com/colincasey">colincasey
+	</a><a class="contributor svelte-1a6945s" style="background-position: 6.526806526806527% 0" href="https://github.com/jamesbirtles">jamesbirtles
+	</a><a class="contributor svelte-1a6945s" style="background-position: 6.75990675990676% 0" href="https://github.com/TehShrike">TehShrike
+	</a><a class="contributor svelte-1a6945s" style="background-position: 6.993006993006993% 0" href="https://github.com/jacobmischka">jacobmischka
+	</a><a class="contributor svelte-1a6945s" style="background-position: 7.226107226107226% 0" href="https://github.com/kaisermann">kaisermann
+	</a><a class="contributor svelte-1a6945s" style="background-position: 7.459207459207459% 0" href="https://github.com/Panya">Panya
+	</a><a class="contributor svelte-1a6945s" style="background-position: 7.6923076923076925% 0" href="https://github.com/sanderhahn">sanderhahn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 7.925407925407925% 0" href="https://github.com/aphitiel">aphitiel
+	</a><a class="contributor svelte-1a6945s" style="background-position: 8.158508158508159% 0" href="https://github.com/skippednote">skippednote
+	</a><a class="contributor svelte-1a6945s" style="background-position: 8.391608391608392% 0" href="https://github.com/MattiasBuelens">MattiasBuelens
+	</a><a class="contributor svelte-1a6945s" style="background-position: 8.624708624708624% 0" href="https://github.com/ehrencrona">ehrencrona
+	</a><a class="contributor svelte-1a6945s" style="background-position: 8.857808857808857% 0" href="https://github.com/dimfeld">dimfeld
+	</a><a class="contributor svelte-1a6945s" style="background-position: 9.090909090909092% 0" href="https://github.com/sw-yx">sw-yx
+	</a><a class="contributor svelte-1a6945s" style="background-position: 9.324009324009324% 0" href="https://github.com/Harald-1">Harald-1
+	</a><a class="contributor svelte-1a6945s" style="background-position: 9.557109557109557% 0" href="https://github.com/Axelen123">Axelen123
+	</a><a class="contributor svelte-1a6945s" style="background-position: 9.79020979020979% 0" href="https://github.com/m59peacemaker">m59peacemaker
+	</a><a class="contributor svelte-1a6945s" style="background-position: 10.023310023310023% 0" href="https://github.com/taylorzane">taylorzane
+	</a><a class="contributor svelte-1a6945s" style="background-position: 10.256410256410257% 0" href="https://github.com/leporo">leporo
+	</a><a class="contributor svelte-1a6945s" style="background-position: 10.48951048951049% 0" href="https://github.com/dkondrad">dkondrad
+	</a><a class="contributor svelte-1a6945s" style="background-position: 10.722610722610723% 0" href="https://github.com/stalkerg">stalkerg
+	</a><a class="contributor svelte-1a6945s" style="background-position: 10.955710955710956% 0" href="https://github.com/thollander">thollander
+	</a><a class="contributor svelte-1a6945s" style="background-position: 11.188811188811188% 0" href="https://github.com/esarbanis">esarbanis
+	</a><a class="contributor svelte-1a6945s" style="background-position: 11.421911421911421% 0" href="https://github.com/hperrin">hperrin
+	</a><a class="contributor svelte-1a6945s" style="background-position: 11.655011655011656% 0" href="https://github.com/LostKobrakai">LostKobrakai
+	</a><a class="contributor svelte-1a6945s" style="background-position: 11.888111888111888% 0" href="https://github.com/bluwy">bluwy
+	</a><a class="contributor svelte-1a6945s" style="background-position: 12.121212121212121% 0" href="https://github.com/jesseskinner">jesseskinner
+	</a><a class="contributor svelte-1a6945s" style="background-position: 12.354312354312354% 0" href="https://github.com/CreaturesInUnitards">CreaturesInUnitards
+	</a><a class="contributor svelte-1a6945s" style="background-position: 12.587412587412587% 0" href="https://github.com/peopledrivemecrazy">peopledrivemecrazy
+	</a><a class="contributor svelte-1a6945s" style="background-position: 12.820512820512821% 0" href="https://github.com/stephane-vanraes">stephane-vanraes
+	</a><a class="contributor svelte-1a6945s" style="background-position: 13.053613053613054% 0" href="https://github.com/umanghome">umanghome
+	</a><a class="contributor svelte-1a6945s" style="background-position: 13.286713286713287% 0" href="https://github.com/baseballyama">baseballyama
+	</a><a class="contributor svelte-1a6945s" style="background-position: 13.51981351981352% 0" href="https://github.com/emilos">emilos
+	</a><a class="contributor svelte-1a6945s" style="background-position: 13.752913752913752% 0" href="https://github.com/kevmodrome">kevmodrome
+	</a><a class="contributor svelte-1a6945s" style="background-position: 13.986013986013987% 0" href="https://github.com/Vages">Vages
+	</a><a class="contributor svelte-1a6945s" style="background-position: 14.21911421911422% 0" href="https://github.com/AlexxNB">AlexxNB
+	</a><a class="contributor svelte-1a6945s" style="background-position: 14.452214452214452% 0" href="https://github.com/AlbertLucianto">AlbertLucianto
+	</a><a class="contributor svelte-1a6945s" style="background-position: 14.685314685314685% 0" href="https://github.com/cristinecula">cristinecula
+	</a><a class="contributor svelte-1a6945s" style="background-position: 14.918414918414918% 0" href="https://github.com/ignatiusmb">ignatiusmb
+	</a><a class="contributor svelte-1a6945s" style="background-position: 15.151515151515152% 0" href="https://github.com/SomaticIT">SomaticIT
+	</a><a class="contributor svelte-1a6945s" style="background-position: 15.384615384615385% 0" href="https://github.com/MikeMatrix">MikeMatrix
+	</a><a class="contributor svelte-1a6945s" style="background-position: 15.617715617715618% 0" href="https://github.com/arxpoetica">arxpoetica
+	</a><a class="contributor svelte-1a6945s" style="background-position: 15.85081585081585% 0" href="https://github.com/shinnn">shinnn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 16.083916083916083% 0" href="https://github.com/timhall">timhall
+	</a><a class="contributor svelte-1a6945s" style="background-position: 16.317016317016318% 0" href="https://github.com/Wolfr">Wolfr
+	</a><a class="contributor svelte-1a6945s" style="background-position: 16.55011655011655% 0" href="https://github.com/bre30kra69cs">bre30kra69cs
+	</a><a class="contributor svelte-1a6945s" style="background-position: 16.783216783216783% 0" href="https://github.com/milahu">milahu
+	</a><a class="contributor svelte-1a6945s" style="background-position: 17.016317016317018% 0" href="https://github.com/123aswin123">123aswin123
+	</a><a class="contributor svelte-1a6945s" style="background-position: 17.24941724941725% 0" href="https://github.com/efeskucuk">efeskucuk
+	</a><a class="contributor svelte-1a6945s" style="background-position: 17.482517482517483% 0" href="https://github.com/ItalyPaleAle">ItalyPaleAle
+	</a><a class="contributor svelte-1a6945s" style="background-position: 17.715617715617714% 0" href="https://github.com/andrelmlins">andrelmlins
+	</a><a class="contributor svelte-1a6945s" style="background-position: 17.94871794871795% 0" href="https://github.com/bwbroersma">bwbroersma
+	</a><a class="contributor svelte-1a6945s" style="background-position: 18.181818181818183% 0" href="https://github.com/clarkdo">clarkdo
+	</a><a class="contributor svelte-1a6945s" style="background-position: 18.414918414918414% 0" href="https://github.com/dominikg">dominikg
+	</a><a class="contributor svelte-1a6945s" style="background-position: 18.64801864801865% 0" href="https://github.com/hbirler">hbirler
+	</a><a class="contributor svelte-1a6945s" style="background-position: 18.88111888111888% 0" href="https://github.com/ElectronSz">ElectronSz
+	</a><a class="contributor svelte-1a6945s" style="background-position: 19.114219114219114% 0" href="https://github.com/NitayRabi">NitayRabi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 19.34731934731935% 0" href="https://github.com/orta">orta
+	</a><a class="contributor svelte-1a6945s" style="background-position: 19.58041958041958% 0" href="https://github.com/PaulMaly">PaulMaly
+	</a><a class="contributor svelte-1a6945s" style="background-position: 19.813519813519815% 0" href="https://github.com/samuelgozi">samuelgozi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 20.046620046620045% 0" href="https://github.com/Shinyaigeek">Shinyaigeek
+	</a><a class="contributor svelte-1a6945s" style="background-position: 20.27972027972028% 0" href="https://github.com/js2me">js2me
+	</a><a class="contributor svelte-1a6945s" style="background-position: 20.512820512820515% 0" href="https://github.com/trbrc">trbrc
+	</a><a class="contributor svelte-1a6945s" style="background-position: 20.745920745920746% 0" href="https://github.com/43081j">43081j
+	</a><a class="contributor svelte-1a6945s" style="background-position: 20.97902097902098% 0" href="https://github.com/BillyLevin">BillyLevin
+	</a><a class="contributor svelte-1a6945s" style="background-position: 21.21212121212121% 0" href="https://github.com/dmitrykurmanov">dmitrykurmanov
+	</a><a class="contributor svelte-1a6945s" style="background-position: 21.445221445221446% 0" href="https://github.com/aarongeorge">aarongeorge
+	</a><a class="contributor svelte-1a6945s" style="background-position: 21.678321678321677% 0" href="https://github.com/arackaf">arackaf
+	</a><a class="contributor svelte-1a6945s" style="background-position: 21.91142191142191% 0" href="https://github.com/industral">industral
+	</a><a class="contributor svelte-1a6945s" style="background-position: 22.144522144522146% 0" href="https://github.com/allantito">allantito
+	</a><a class="contributor svelte-1a6945s" style="background-position: 22.377622377622377% 0" href="https://github.com/almaz-khan">almaz-khan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 22.61072261072261% 0" href="https://github.com/amwmedia">amwmedia
+	</a><a class="contributor svelte-1a6945s" style="background-position: 22.843822843822842% 0" href="https://github.com/anthonylegoas">anthonylegoas
+	</a><a class="contributor svelte-1a6945s" style="background-position: 23.076923076923077% 0" href="https://github.com/benlesh">benlesh
+	</a><a class="contributor svelte-1a6945s" style="background-position: 23.31002331002331% 0" href="https://github.com/bfanger">bfanger
+	</a><a class="contributor svelte-1a6945s" style="background-position: 23.543123543123542% 0" href="https://github.com/CMessinides">CMessinides
+	</a><a class="contributor svelte-1a6945s" style="background-position: 23.776223776223777% 0" href="https://github.com/chrishelgert">chrishelgert
+	</a><a class="contributor svelte-1a6945s" style="background-position: 24.009324009324008% 0" href="https://github.com/Crisfole">Crisfole
+	</a><a class="contributor svelte-1a6945s" style="background-position: 24.242424242424242% 0" href="https://github.com/funkybob">funkybob
+	</a><a class="contributor svelte-1a6945s" style="background-position: 24.475524475524477% 0" href="https://github.com/membranophonist">membranophonist
+	</a><a class="contributor svelte-1a6945s" style="background-position: 24.708624708624708% 0" href="https://github.com/deanmcpherson">deanmcpherson
+	</a><a class="contributor svelte-1a6945s" style="background-position: 24.941724941724942% 0" href="https://github.com/neoel">neoel
+	</a><a class="contributor svelte-1a6945s" style="background-position: 25.174825174825173% 0" href="https://github.com/dreitzner">dreitzner
+	</a><a class="contributor svelte-1a6945s" style="background-position: 25.407925407925408% 0" href="https://github.com/SrZorro">SrZorro
+	</a><a class="contributor svelte-1a6945s" style="background-position: 25.641025641025642% 0" href="https://github.com/ceifa">ceifa
+	</a><a class="contributor svelte-1a6945s" style="background-position: 25.874125874125873% 0" href="https://github.com/Jingmnt">Jingmnt
+	</a><a class="contributor svelte-1a6945s" style="background-position: 26.107226107226108% 0" href="https://github.com/johnmuhl">johnmuhl
+	</a><a class="contributor svelte-1a6945s" style="background-position: 26.34032634032634% 0" href="https://github.com/zlsa">zlsa
+	</a><a class="contributor svelte-1a6945s" style="background-position: 26.573426573426573% 0" href="https://github.com/joaopaulobdac">joaopaulobdac
+	</a><a class="contributor svelte-1a6945s" style="background-position: 26.806526806526808% 0" href="https://github.com/nosovk">nosovk
+	</a><a class="contributor svelte-1a6945s" style="background-position: 27.03962703962704% 0" href="https://github.com/lukasmoellerch">lukasmoellerch
+	</a><a class="contributor svelte-1a6945s" style="background-position: 27.272727272727273% 0" href="https://github.com/Matt-Pilott">Matt-Pilott
+	</a><a class="contributor svelte-1a6945s" style="background-position: 27.505827505827504% 0" href="https://github.com/mattwolff">mattwolff
+	</a><a class="contributor svelte-1a6945s" style="background-position: 27.73892773892774% 0" href="https://github.com/mhmd-22">mhmd-22
+	</a><a class="contributor svelte-1a6945s" style="background-position: 27.972027972027973% 0" href="https://github.com/nikku">nikku
+	</a><a class="contributor svelte-1a6945s" style="background-position: 28.205128205128204% 0" href="https://github.com/oguzhaninan">oguzhaninan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 28.43822843822844% 0" href="https://github.com/PKlknr">PKlknr
+	</a><a class="contributor svelte-1a6945s" style="background-position: 28.67132867132867% 0" href="https://github.com/plmrry">plmrry
+	</a><a class="contributor svelte-1a6945s" style="background-position: 28.904428904428904% 0" href="https://github.com/varholak-peter">varholak-peter
+	</a><a class="contributor svelte-1a6945s" style="background-position: 29.13752913752914% 0" href="https://github.com/RobinCsl">RobinCsl
+	</a><a class="contributor svelte-1a6945s" style="background-position: 29.37062937062937% 0" href="https://github.com/sercaneraslan">sercaneraslan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 29.603729603729604% 0" href="https://github.com/kyrylkov">kyrylkov
+	</a><a class="contributor svelte-1a6945s" style="background-position: 29.836829836829835% 0" href="https://github.com/vascoosx">vascoosx
+	</a><a class="contributor svelte-1a6945s" style="background-position: 30.06993006993007% 0" href="https://github.com/SteveALee">SteveALee
+	</a><a class="contributor svelte-1a6945s" style="background-position: 30.303030303030305% 0" href="https://github.com/Th0rN13">Th0rN13
+	</a><a class="contributor svelte-1a6945s" style="background-position: 30.536130536130536% 0" href="https://github.com/thgh">thgh
+	</a><a class="contributor svelte-1a6945s" style="background-position: 30.76923076923077% 0" href="https://github.com/timdeschryver">timdeschryver
+	</a><a class="contributor svelte-1a6945s" style="background-position: 31.002331002331% 0" href="https://github.com/saibotsivad">saibotsivad
+	</a><a class="contributor svelte-1a6945s" style="background-position: 31.235431235431236% 0" href="https://github.com/cvlab">cvlab
+	</a><a class="contributor svelte-1a6945s" style="background-position: 31.46853146853147% 0" href="https://github.com/adrian5">adrian5
+	</a><a class="contributor svelte-1a6945s" style="background-position: 31.7016317016317% 0" href="https://github.com/cayasso">cayasso
+	</a><a class="contributor svelte-1a6945s" style="background-position: 31.934731934731936% 0" href="https://github.com/cudr">cudr
+	</a><a class="contributor svelte-1a6945s" style="background-position: 32.16783216783217% 0" href="https://github.com/dasZGFz">dasZGFz
+	</a><a class="contributor svelte-1a6945s" style="background-position: 32.4009324009324% 0" href="https://github.com/cbolgiano">cbolgiano
+	</a><a class="contributor svelte-1a6945s" style="background-position: 32.634032634032636% 0" href="https://github.com/fivemru">fivemru
+	</a><a class="contributor svelte-1a6945s" style="background-position: 32.86713286713287% 0" href="https://github.com/gabysantosw">gabysantosw
+	</a><a class="contributor svelte-1a6945s" style="background-position: 33.1002331002331% 0" href="https://github.com/gunggmee">gunggmee
+	</a><a class="contributor svelte-1a6945s" style="background-position: 33.333333333333336% 0" href="https://github.com/martinandert">martinandert
+	</a><a class="contributor svelte-1a6945s" style="background-position: 33.56643356643357% 0" href="https://github.com/mustafa0x">mustafa0x
+	</a><a class="contributor svelte-1a6945s" style="background-position: 33.7995337995338% 0" href="https://github.com/zh-lx">zh-lx
+	</a><a class="contributor svelte-1a6945s" style="background-position: 34.032634032634036% 0" href="https://github.com/Kapsonfire-DE">Kapsonfire-DE
+	</a><a class="contributor svelte-1a6945s" style="background-position: 34.26573426573427% 0" href="https://github.com/elliotwaite">elliotwaite
+	</a><a class="contributor svelte-1a6945s" style="background-position: 34.4988344988345% 0" href="https://github.com/fjorgemota">fjorgemota
+	</a><a class="contributor svelte-1a6945s" style="background-position: 34.73193473193473% 0" href="https://github.com/vaibhav111tandon">vaibhav111tandon
+	</a><a class="contributor svelte-1a6945s" style="background-position: 34.96503496503497% 0" href="https://github.com/davidaq">davidaq
+	</a><a class="contributor svelte-1a6945s" style="background-position: 35.1981351981352% 0" href="https://github.com/vedam">vedam
+	</a><a class="contributor svelte-1a6945s" style="background-position: 35.43123543123543% 0" href="https://github.com/ogre-yoga">ogre-yoga
+	</a><a class="contributor svelte-1a6945s" style="background-position: 35.66433566433567% 0" href="https://github.com/adam-bates">adam-bates
+	</a><a class="contributor svelte-1a6945s" style="background-position: 35.8974358974359% 0" href="https://github.com/x-dune">x-dune
+	</a><a class="contributor svelte-1a6945s" style="background-position: 36.13053613053613% 0" href="https://github.com/1wheel">1wheel
+	</a><a class="contributor svelte-1a6945s" style="background-position: 36.36363636363637% 0" href="https://github.com/ooade">ooade
+	</a><a class="contributor svelte-1a6945s" style="background-position: 36.5967365967366% 0" href="https://github.com/JitPackJoyride">JitPackJoyride
+	</a><a class="contributor svelte-1a6945s" style="background-position: 36.82983682983683% 0" href="https://github.com/Alaricus">Alaricus
+	</a><a class="contributor svelte-1a6945s" style="background-position: 37.06293706293706% 0" href="https://github.com/Lumm1t">Lumm1t
+	</a><a class="contributor svelte-1a6945s" style="background-position: 37.2960372960373% 0" href="https://github.com/alexiglesias93">alexiglesias93
+	</a><a class="contributor svelte-1a6945s" style="background-position: 37.52913752913753% 0" href="https://github.com/alexnoz">alexnoz
+	</a><a class="contributor svelte-1a6945s" style="background-position: 37.76223776223776% 0" href="https://github.com/Pierstoval">Pierstoval
+	</a><a class="contributor svelte-1a6945s" style="background-position: 37.995337995338% 0" href="https://github.com/Alex-CS">Alex-CS
+	</a><a class="contributor svelte-1a6945s" style="background-position: 38.22843822843823% 0" href="https://github.com/Prinzhorn">Prinzhorn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 38.46153846153846% 0" href="https://github.com/aorel">aorel
+	</a><a class="contributor svelte-1a6945s" style="background-position: 38.6946386946387% 0" href="https://github.com/AlexandreCantin">AlexandreCantin
+	</a><a class="contributor svelte-1a6945s" style="background-position: 38.92773892773893% 0" href="https://github.com/AlexGalays">AlexGalays
+	</a><a class="contributor svelte-1a6945s" style="background-position: 39.16083916083916% 0" href="https://github.com/MeuhMeuh">MeuhMeuh
+	</a><a class="contributor svelte-1a6945s" style="background-position: 39.39393939393939% 0" href="https://github.com/almogtavor">almogtavor
+	</a><a class="contributor svelte-1a6945s" style="background-position: 39.62703962703963% 0" href="https://github.com/Phaqui">Phaqui
+	</a><a class="contributor svelte-1a6945s" style="background-position: 39.86013986013986% 0" href="https://github.com/andreieftimie">andreieftimie
+	</a><a class="contributor svelte-1a6945s" style="background-position: 40.09324009324009% 0" href="https://github.com/healeycodes">healeycodes
+	</a><a class="contributor svelte-1a6945s" style="background-position: 40.32634032634033% 0" href="https://github.com/gilgameshskytrooper">gilgameshskytrooper
+	</a><a class="contributor svelte-1a6945s" style="background-position: 40.55944055944056% 0" href="https://github.com/talklittle">talklittle
+	</a><a class="contributor svelte-1a6945s" style="background-position: 40.79254079254079% 0" href="https://github.com/hexagonrecursion">hexagonrecursion
+	</a><a class="contributor svelte-1a6945s" style="background-position: 41.02564102564103% 0" href="https://github.com/abruere">abruere
+	</a><a class="contributor svelte-1a6945s" style="background-position: 41.25874125874126% 0" href="https://github.com/ankeetmaini">ankeetmaini
+	</a><a class="contributor svelte-1a6945s" style="background-position: 41.49184149184149% 0" href="https://github.com/aredridel">aredridel
+	</a><a class="contributor svelte-1a6945s" style="background-position: 41.72494172494172% 0" href="https://github.com/arthurdenner">arthurdenner
+	</a><a class="contributor svelte-1a6945s" style="background-position: 41.95804195804196% 0" href="https://github.com/acstll">acstll
+	</a><a class="contributor svelte-1a6945s" style="background-position: 42.19114219114219% 0" href="https://github.com/guzart">guzart
+	</a><a class="contributor svelte-1a6945s" style="background-position: 42.42424242424242% 0" href="https://github.com/AshishKapoor">AshishKapoor
+	</a><a class="contributor svelte-1a6945s" style="background-position: 42.65734265734266% 0" href="https://github.com/RedHatter">RedHatter
+	</a><a class="contributor svelte-1a6945s" style="background-position: 42.89044289044289% 0" href="https://github.com/el1f">el1f
+	</a><a class="contributor svelte-1a6945s" style="background-position: 43.12354312354312% 0" href="https://github.com/babakfp">babakfp
+	</a><a class="contributor svelte-1a6945s" style="background-position: 43.35664335664335% 0" href="https://github.com/webdesq">webdesq
+	</a><a class="contributor svelte-1a6945s" style="background-position: 43.58974358974359% 0" href="https://github.com/remotelydev">remotelydev
+	</a><a class="contributor svelte-1a6945s" style="background-position: 43.82284382284382% 0" href="https://github.com/bashunaimiroy">bashunaimiroy
+	</a><a class="contributor svelte-1a6945s" style="background-position: 44.05594405594405% 0" href="https://github.com/benoror">benoror
+	</a><a class="contributor svelte-1a6945s" style="background-position: 44.28904428904429% 0" href="https://github.com/palewire">palewire
+	</a><a class="contributor svelte-1a6945s" style="background-position: 44.52214452214452% 0" href="https://github.com/benschac">benschac
+	</a><a class="contributor svelte-1a6945s" style="background-position: 44.75524475524475% 0" href="https://github.com/bertybot">bertybot
+	</a><a class="contributor svelte-1a6945s" style="background-position: 44.98834498834499% 0" href="https://github.com/rster2002">rster2002
+	</a><a class="contributor svelte-1a6945s" style="background-position: 45.22144522144522% 0" href="https://github.com/bdougherty">bdougherty
+	</a><a class="contributor svelte-1a6945s" style="background-position: 45.45454545454545% 0" href="https://github.com/korywka">korywka
+	</a><a class="contributor svelte-1a6945s" style="background-position: 45.687645687645684% 0" href="https://github.com/blittle">blittle
+	</a><a class="contributor svelte-1a6945s" style="background-position: 45.92074592074592% 0" href="https://github.com/c0bra">c0bra
+	</a><a class="contributor svelte-1a6945s" style="background-position: 46.15384615384615% 0" href="https://github.com/bsssshhhhhhh">bsssshhhhhhh
+	</a><a class="contributor svelte-1a6945s" style="background-position: 46.386946386946384% 0" href="https://github.com/cj81499">cj81499
+	</a><a class="contributor svelte-1a6945s" style="background-position: 46.62004662004662% 0" href="https://github.com/Orbyt">Orbyt
+	</a><a class="contributor svelte-1a6945s" style="background-position: 46.85314685314685% 0" href="https://github.com/camjackson">camjackson
+	</a><a class="contributor svelte-1a6945s" style="background-position: 47.086247086247084% 0" href="https://github.com/caroso1222">caroso1222
+	</a><a class="contributor svelte-1a6945s" style="background-position: 47.31934731934732% 0" href="https://github.com/InsanityOnABun">InsanityOnABun
+	</a><a class="contributor svelte-1a6945s" style="background-position: 47.55244755244755% 0" href="https://github.com/Cleecanth">Cleecanth
+	</a><a class="contributor svelte-1a6945s" style="background-position: 47.785547785547784% 0" href="https://github.com/chris-morgan">chris-morgan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 48.018648018648015% 0" href="https://github.com/caengen">caengen
+	</a><a class="contributor svelte-1a6945s" style="background-position: 48.25174825174825% 0" href="https://github.com/christianheine">christianheine
+	</a><a class="contributor svelte-1a6945s" style="background-position: 48.484848484848484% 0" href="https://github.com/klaussner">klaussner
+	</a><a class="contributor svelte-1a6945s" style="background-position: 48.717948717948715% 0" href="https://github.com/clebert">clebert
+	</a><a class="contributor svelte-1a6945s" style="background-position: 48.95104895104895% 0" href="https://github.com/dalemartyn">dalemartyn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 49.184149184149184% 0" href="https://github.com/damianpumar">damianpumar
+	</a><a class="contributor svelte-1a6945s" style="background-position: 49.417249417249415% 0" href="https://github.com/dkzlv">dkzlv
+	</a><a class="contributor svelte-1a6945s" style="background-position: 49.65034965034965% 0" href="https://github.com/DanielPower">DanielPower
+	</a><a class="contributor svelte-1a6945s" style="background-position: 49.883449883449885% 0" href="https://github.com/himynameisdave">himynameisdave
+	</a><a class="contributor svelte-1a6945s" style="background-position: 50.116550116550115% 0" href="https://github.com/davebrent">davebrent
+	</a><a class="contributor svelte-1a6945s" style="background-position: 50.34965034965035% 0" href="https://github.com/davedawkins">davedawkins
+	</a><a class="contributor svelte-1a6945s" style="background-position: 50.582750582750585% 0" href="https://github.com/davemo">davemo
+	</a><a class="contributor svelte-1a6945s" style="background-position: 50.815850815850816% 0" href="https://github.com/daybrush">daybrush
+	</a><a class="contributor svelte-1a6945s" style="background-position: 51.04895104895105% 0" href="https://github.com/debargharoy">debargharoy
+	</a><a class="contributor svelte-1a6945s" style="background-position: 51.282051282051285% 0" href="https://github.com/widyakumara">widyakumara
+	</a><a class="contributor svelte-1a6945s" style="background-position: 51.515151515151516% 0" href="https://github.com/diegoramosxyz">diegoramosxyz
+	</a><a class="contributor svelte-1a6945s" style="background-position: 51.74825174825175% 0" href="https://github.com/DoctorNefario">DoctorNefario
+	</a><a class="contributor svelte-1a6945s" style="background-position: 51.981351981351985% 0" href="https://github.com/dogagenc">dogagenc
+	</a><a class="contributor svelte-1a6945s" style="background-position: 52.214452214452216% 0" href="https://github.com/cornerfarmer">cornerfarmer
+	</a><a class="contributor svelte-1a6945s" style="background-position: 52.44755244755245% 0" href="https://github.com/StarpTech">StarpTech
+	</a><a class="contributor svelte-1a6945s" style="background-position: 52.68065268065268% 0" href="https://github.com/EddyVinck">EddyVinck
+	</a><a class="contributor svelte-1a6945s" style="background-position: 52.913752913752916% 0" href="https://github.com/EmNudge">EmNudge
+	</a><a class="contributor svelte-1a6945s" style="background-position: 53.14685314685315% 0" href="https://github.com/ematipico">ematipico
+	</a><a class="contributor svelte-1a6945s" style="background-position: 53.37995337995338% 0" href="https://github.com/enstyled">enstyled
+	</a><a class="contributor svelte-1a6945s" style="background-position: 53.613053613053616% 0" href="https://github.com/ericdfields">ericdfields
+	</a><a class="contributor svelte-1a6945s" style="background-position: 53.84615384615385% 0" href="https://github.com/ersin-ertan">ersin-ertan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 54.07925407925408% 0" href="https://github.com/skrifblokk">skrifblokk
+	</a><a class="contributor svelte-1a6945s" style="background-position: 54.312354312354316% 0" href="https://github.com/evanmoncuso">evanmoncuso
+	</a><a class="contributor svelte-1a6945s" style="background-position: 54.54545454545455% 0" href="https://github.com/vilarfg">vilarfg
+	</a><a class="contributor svelte-1a6945s" style="background-position: 54.77855477855478% 0" href="https://github.com/fielding">fielding
+	</a><a class="contributor svelte-1a6945s" style="background-position: 55.01165501165501% 0" href="https://github.com/fraserdarwent">fraserdarwent
+	</a><a class="contributor svelte-1a6945s" style="background-position: 55.24475524475525% 0" href="https://github.com/Gabswim">Gabswim
+	</a><a class="contributor svelte-1a6945s" style="background-position: 55.47785547785548% 0" href="https://github.com/gautamkrishnar">gautamkrishnar
+	</a><a class="contributor svelte-1a6945s" style="background-position: 55.71095571095571% 0" href="https://github.com/GeopJr">GeopJr
+	</a><a class="contributor svelte-1a6945s" style="background-position: 55.94405594405595% 0" href="https://github.com/gonfva">gonfva
+	</a><a class="contributor svelte-1a6945s" style="background-position: 56.17715617715618% 0" href="https://github.com/gka">gka
+	</a><a class="contributor svelte-1a6945s" style="background-position: 56.41025641025641% 0" href="https://github.com/GllmR">GllmR
+	</a><a class="contributor svelte-1a6945s" style="background-position: 56.64335664335665% 0" href="https://github.com/Denhai">Denhai
+	</a><a class="contributor svelte-1a6945s" style="background-position: 56.87645687645688% 0" href="https://github.com/ivanhofer">ivanhofer
+	</a><a class="contributor svelte-1a6945s" style="background-position: 57.10955710955711% 0" href="https://github.com/hchatel">hchatel
+	</a><a class="contributor svelte-1a6945s" style="background-position: 57.34265734265734% 0" href="https://github.com/IlyaSemenov">IlyaSemenov
+	</a><a class="contributor svelte-1a6945s" style="background-position: 57.57575757575758% 0" href="https://github.com/newbornfrontender">newbornfrontender
+	</a><a class="contributor svelte-1a6945s" style="background-position: 57.80885780885781% 0" href="https://github.com/irshad">irshad
+	</a><a class="contributor svelte-1a6945s" style="background-position: 58.04195804195804% 0" href="https://github.com/irshadshalu">irshadshalu
+	</a><a class="contributor svelte-1a6945s" style="background-position: 58.27505827505828% 0" href="https://github.com/ilblog">ilblog
+	</a><a class="contributor svelte-1a6945s" style="background-position: 58.50815850815851% 0" href="https://github.com/IvanSanchez">IvanSanchez
+	</a><a class="contributor svelte-1a6945s" style="background-position: 58.74125874125874% 0" href="https://github.com/j-delaney">j-delaney
+	</a><a class="contributor svelte-1a6945s" style="background-position: 58.97435897435897% 0" href="https://github.com/beegan">beegan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 59.20745920745921% 0" href="https://github.com/jackyef">jackyef
+	</a><a class="contributor svelte-1a6945s" style="background-position: 59.44055944055944% 0" href="https://github.com/lunchboxer">lunchboxer
+	</a><a class="contributor svelte-1a6945s" style="background-position: 59.67365967365967% 0" href="https://github.com/jthegedus">jthegedus
+	</a><a class="contributor svelte-1a6945s" style="background-position: 59.90675990675991% 0" href="https://github.com/euoia">euoia
+	</a><a class="contributor svelte-1a6945s" style="background-position: 60.13986013986014% 0" href="https://github.com/foucist">foucist
+	</a><a class="contributor svelte-1a6945s" style="background-position: 60.37296037296037% 0" href="https://github.com/Rukenshia">Rukenshia
+	</a><a class="contributor svelte-1a6945s" style="background-position: 60.60606060606061% 0" href="https://github.com/jatinhemnani01">jatinhemnani01
+	</a><a class="contributor svelte-1a6945s" style="background-position: 60.83916083916084% 0" href="https://github.com/JeremyBernier">JeremyBernier
+	</a><a class="contributor svelte-1a6945s" style="background-position: 61.07226107226107% 0" href="https://github.com/Joxtacy">Joxtacy
+	</a><a class="contributor svelte-1a6945s" style="background-position: 61.3053613053613% 0" href="https://github.com/jesmrie">jesmrie
+	</a><a class="contributor svelte-1a6945s" style="background-position: 61.53846153846154% 0" href="https://github.com/jwicks31">jwicks31
+	</a><a class="contributor svelte-1a6945s" style="background-position: 61.77156177156177% 0" href="https://github.com/neorth">neorth
+	</a><a class="contributor svelte-1a6945s" style="background-position: 62.004662004662% 0" href="https://github.com/johman10">johman10
+	</a><a class="contributor svelte-1a6945s" style="background-position: 62.23776223776224% 0" href="https://github.com/dravog7">dravog7
+	</a><a class="contributor svelte-1a6945s" style="background-position: 62.47086247086247% 0" href="https://github.com/6eDesign">6eDesign
+	</a><a class="contributor svelte-1a6945s" style="background-position: 62.7039627039627% 0" href="https://github.com/Jongkeun">Jongkeun
+	</a><a class="contributor svelte-1a6945s" style="background-position: 62.93706293706294% 0" href="https://github.com/jonniek">jonniek
+	</a><a class="contributor svelte-1a6945s" style="background-position: 63.17016317016317% 0" href="https://github.com/kesne">kesne
+	</a><a class="contributor svelte-1a6945s" style="background-position: 63.4032634032634% 0" href="https://github.com/jormaj">jormaj
+	</a><a class="contributor svelte-1a6945s" style="background-position: 63.63636363636363% 0" href="https://github.com/tel">tel
+	</a><a class="contributor svelte-1a6945s" style="background-position: 63.86946386946387% 0" href="https://github.com/JounQin">JounQin
+	</a><a class="contributor svelte-1a6945s" style="background-position: 64.1025641025641% 0" href="https://github.com/getkey">getkey
+	</a><a class="contributor svelte-1a6945s" style="background-position: 64.33566433566433% 0" href="https://github.com/pyoner">pyoner
+	</a><a class="contributor svelte-1a6945s" style="background-position: 64.56876456876456% 0" href="https://github.com/vitalragaz">vitalragaz
+	</a><a class="contributor svelte-1a6945s" style="background-position: 64.8018648018648% 0" href="https://github.com/kjj6198">kjj6198
+	</a><a class="contributor svelte-1a6945s" style="background-position: 65.03496503496504% 0" href="https://github.com/Karsten7">Karsten7
+	</a><a class="contributor svelte-1a6945s" style="background-position: 65.26806526806527% 0" href="https://github.com/khtdr">khtdr
+	</a><a class="contributor svelte-1a6945s" style="background-position: 65.5011655011655% 0" href="https://github.com/netaisllc">netaisllc
+	</a><a class="contributor svelte-1a6945s" style="background-position: 65.73426573426573% 0" href="https://github.com/lewoudar">lewoudar
+	</a><a class="contributor svelte-1a6945s" style="background-position: 65.96736596736596% 0" href="https://github.com/kieranbarker">kieranbarker
+	</a><a class="contributor svelte-1a6945s" style="background-position: 66.2004662004662% 0" href="https://github.com/Kiho">Kiho
+	</a><a class="contributor svelte-1a6945s" style="background-position: 66.43356643356644% 0" href="https://github.com/atomAltera">atomAltera
+	</a><a class="contributor svelte-1a6945s" style="background-position: 66.66666666666667% 0" href="https://github.com/kissu">kissu
+	</a><a class="contributor svelte-1a6945s" style="background-position: 66.8997668997669% 0" href="https://github.com/lawrencelogoh">lawrencelogoh
+	</a><a class="contributor svelte-1a6945s" style="background-position: 67.13286713286713% 0" href="https://github.com/leereamsnyder">leereamsnyder
+	</a><a class="contributor svelte-1a6945s" style="background-position: 67.36596736596736% 0" href="https://github.com/div-Leo">div-Leo
+	</a><a class="contributor svelte-1a6945s" style="background-position: 67.5990675990676% 0" href="https://github.com/leomarquine">leomarquine
+	</a><a class="contributor svelte-1a6945s" style="background-position: 67.83216783216783% 0" href="https://github.com/axil">axil
+	</a><a class="contributor svelte-1a6945s" style="background-position: 68.06526806526807% 0" href="https://github.com/itsliamegan">itsliamegan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 68.2983682983683% 0" href="https://github.com/lode">lode
+	</a><a class="contributor svelte-1a6945s" style="background-position: 68.53146853146853% 0" href="https://github.com/lorenbrichter">lorenbrichter
+	</a><a class="contributor svelte-1a6945s" style="background-position: 68.76456876456876% 0" href="https://github.com/lguzzon">lguzzon
+	</a><a class="contributor svelte-1a6945s" style="background-position: 68.997668997669% 0" href="https://github.com/confraria">confraria
+	</a><a class="contributor svelte-1a6945s" style="background-position: 69.23076923076923% 0" href="https://github.com/lukerhoads">lukerhoads
+	</a><a class="contributor svelte-1a6945s" style="background-position: 69.46386946386946% 0" href="https://github.com/lyndsysimon">lyndsysimon
+	</a><a class="contributor svelte-1a6945s" style="background-position: 69.6969696969697% 0" href="https://github.com/habibrosyad">habibrosyad
+	</a><a class="contributor svelte-1a6945s" style="background-position: 69.93006993006993% 0" href="https://github.com/baslr">baslr
+	</a><a class="contributor svelte-1a6945s" style="background-position: 70.16317016317016% 0" href="https://github.com/MShuttle">MShuttle
+	</a><a class="contributor svelte-1a6945s" style="background-position: 70.3962703962704% 0" href="https://github.com/marvinhagemeister">marvinhagemeister
+	</a><a class="contributor svelte-1a6945s" style="background-position: 70.62937062937063% 0" href="https://github.com/mahenrique94">mahenrique94
+	</a><a class="contributor svelte-1a6945s" style="background-position: 70.86247086247086% 0" href="https://github.com/mdempsky">mdempsky
+	</a><a class="contributor svelte-1a6945s" style="background-position: 71.0955710955711% 0" href="https://github.com/spaceinvadev">spaceinvadev
+	</a><a class="contributor svelte-1a6945s" style="background-position: 71.32867132867133% 0" href="https://github.com/maxmilton">maxmilton
+	</a><a class="contributor svelte-1a6945s" style="background-position: 71.56177156177156% 0" href="https://github.com/mikedubcurry">mikedubcurry
+	</a><a class="contributor svelte-1a6945s" style="background-position: 71.7948717948718% 0" href="https://github.com/majkelbed">majkelbed
+	</a><a class="contributor svelte-1a6945s" style="background-position: 72.02797202797203% 0" href="https://github.com/mterczynski">mterczynski
+	</a><a class="contributor svelte-1a6945s" style="background-position: 72.26107226107226% 0" href="https://github.com/mkhan45">mkhan45
+	</a><a class="contributor svelte-1a6945s" style="background-position: 72.49417249417249% 0" href="https://github.com/mtlewis">mtlewis
+	</a><a class="contributor svelte-1a6945s" style="background-position: 72.72727272727273% 0" href="https://github.com/khorpy">khorpy
+	</a><a class="contributor svelte-1a6945s" style="background-position: 72.96037296037296% 0" href="https://github.com/macmillen">macmillen
+	</a><a class="contributor svelte-1a6945s" style="background-position: 73.1934731934732% 0" href="https://github.com/stokesman">stokesman
+	</a><a class="contributor svelte-1a6945s" style="background-position: 73.42657342657343% 0" href="https://github.com/Milesq">Milesq
+	</a><a class="contributor svelte-1a6945s" style="background-position: 73.65967365967366% 0" href="https://github.com/Mlocik97">Mlocik97
+	</a><a class="contributor svelte-1a6945s" style="background-position: 73.89277389277389% 0" href="https://github.com/mohamedhaddi">mohamedhaddi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 74.12587412587412% 0" href="https://github.com/gtm-nayan">gtm-nayan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 74.35897435897436% 0" href="https://github.com/haond10adp">haond10adp
+	</a><a class="contributor svelte-1a6945s" style="background-position: 74.5920745920746% 0" href="https://github.com/nick-vincent">nick-vincent
+	</a><a class="contributor svelte-1a6945s" style="background-position: 74.82517482517483% 0" href="https://github.com/nicolasmgaray">nicolasmgaray
+	</a><a class="contributor svelte-1a6945s" style="background-position: 75.05827505827506% 0" href="https://github.com/charpeni">charpeni
+	</a><a class="contributor svelte-1a6945s" style="background-position: 75.29137529137529% 0" href="https://github.com/jacoux">jacoux
+	</a><a class="contributor svelte-1a6945s" style="background-position: 75.52447552447552% 0" href="https://github.com/quantuminformation">quantuminformation
+	</a><a class="contributor svelte-1a6945s" style="background-position: 75.75757575757575% 0" href="https://github.com/njbotkin">njbotkin
+	</a><a class="contributor svelte-1a6945s" style="background-position: 75.990675990676% 0" href="https://github.com/nolanlawson">nolanlawson
+	</a><a class="contributor svelte-1a6945s" style="background-position: 76.22377622377623% 0" href="https://github.com/hunnble">hunnble
+	</a><a class="contributor svelte-1a6945s" style="background-position: 76.45687645687646% 0" href="https://github.com/odjhey">odjhey
+	</a><a class="contributor svelte-1a6945s" style="background-position: 76.68997668997669% 0" href="https://github.com/OJFord">OJFord
+	</a><a class="contributor svelte-1a6945s" style="background-position: 76.92307692307692% 0" href="https://github.com/Olanetsoft">Olanetsoft
+	</a><a class="contributor svelte-1a6945s" style="background-position: 77.15617715617715% 0" href="https://github.com/omeraplak">omeraplak
+	</a><a class="contributor svelte-1a6945s" style="background-position: 77.3892773892774% 0" href="https://github.com/lovasoa">lovasoa
+	</a><a class="contributor svelte-1a6945s" style="background-position: 77.62237762237763% 0" href="https://github.com/oscard0m">oscard0m
+	</a><a class="contributor svelte-1a6945s" style="background-position: 77.85547785547786% 0" href="https://github.com/oscarmattsson">oscarmattsson
+	</a><a class="contributor svelte-1a6945s" style="background-position: 78.08857808857809% 0" href="https://github.com/outloudvi">outloudvi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 78.32167832167832% 0" href="https://github.com/vp2177">vp2177
+	</a><a class="contributor svelte-1a6945s" style="background-position: 78.55477855477855% 0" href="https://github.com/paulocoghi">paulocoghi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 78.78787878787878% 0" href="https://github.com/pboling">pboling
+	</a><a class="contributor svelte-1a6945s" style="background-position: 79.02097902097903% 0" href="https://github.com/blackwolf12333">blackwolf12333
+	</a><a class="contributor svelte-1a6945s" style="background-position: 79.25407925407926% 0" href="https://github.com/RAYDENFilipp">RAYDENFilipp
+	</a><a class="contributor svelte-1a6945s" style="background-position: 79.48717948717949% 0" href="https://github.com/michaelphipps">michaelphipps
+	</a><a class="contributor svelte-1a6945s" style="background-position: 79.72027972027972% 0" href="https://github.com/hontas">hontas
+	</a><a class="contributor svelte-1a6945s" style="background-position: 79.95337995337995% 0" href="https://github.com/raitalharehman">raitalharehman
+	</a><a class="contributor svelte-1a6945s" style="background-position: 80.18648018648018% 0" href="https://github.com/rajnandan1">rajnandan1
+	</a><a class="contributor svelte-1a6945s" style="background-position: 80.41958041958041% 0" href="https://github.com/retotrinkler">retotrinkler
+	</a><a class="contributor svelte-1a6945s" style="background-position: 80.65268065268066% 0" href="https://github.com/rohanfaiyazkhan">rohanfaiyazkhan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 80.88578088578089% 0" href="https://github.com/rohankokane">rohankokane
+	</a><a class="contributor svelte-1a6945s" style="background-position: 81.11888111888112% 0" href="https://github.com/91k">91k
+	</a><a class="contributor svelte-1a6945s" style="background-position: 81.35198135198135% 0" href="https://github.com/roychoo">roychoo
+	</a><a class="contributor svelte-1a6945s" style="background-position: 81.58508158508158% 0" href="https://github.com/rmariuzzo">rmariuzzo
+	</a><a class="contributor svelte-1a6945s" style="background-position: 81.81818181818181% 0" href="https://github.com/ItzaMi">ItzaMi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 82.05128205128206% 0" href="https://github.com/ryanatkn">ryanatkn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 82.28438228438229% 0" href="https://github.com/samccone">samccone
+	</a><a class="contributor svelte-1a6945s" style="background-position: 82.51748251748252% 0" href="https://github.com/Greenheart">Greenheart
+	</a><a class="contributor svelte-1a6945s" style="background-position: 82.75058275058275% 0" href="https://github.com/sangxxh">sangxxh
+	</a><a class="contributor svelte-1a6945s" style="background-position: 82.98368298368298% 0" href="https://github.com/mrsauravsahu">mrsauravsahu
+	</a><a class="contributor svelte-1a6945s" style="background-position: 83.21678321678321% 0" href="https://github.com/scottbedard">scottbedard
+	</a><a class="contributor svelte-1a6945s" style="background-position: 83.44988344988344% 0" href="https://github.com/eps1lon">eps1lon
+	</a><a class="contributor svelte-1a6945s" style="background-position: 83.68298368298369% 0" href="https://github.com/sebastian-stephan">sebastian-stephan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 83.91608391608392% 0" href="https://github.com/shakhbulatgaz">shakhbulatgaz
+	</a><a class="contributor svelte-1a6945s" style="background-position: 84.14918414918415% 0" href="https://github.com/lenovouser">lenovouser
+	</a><a class="contributor svelte-1a6945s" style="background-position: 84.38228438228438% 0" href="https://github.com/john7doe">john7doe
+	</a><a class="contributor svelte-1a6945s" style="background-position: 84.61538461538461% 0" href="https://github.com/Softmus">Softmus
+	</a><a class="contributor svelte-1a6945s" style="background-position: 84.84848484848484% 0" href="https://github.com/CyberAP">CyberAP
+	</a><a class="contributor svelte-1a6945s" style="background-position: 85.08158508158508% 0" href="https://github.com/buhrmi">buhrmi
+	</a><a class="contributor svelte-1a6945s" style="background-position: 85.31468531468532% 0" href="https://github.com/sdemjanenko">sdemjanenko
+	</a><a class="contributor svelte-1a6945s" style="background-position: 85.54778554778555% 0" href="https://github.com/StevenWeathers">StevenWeathers
+	</a><a class="contributor svelte-1a6945s" style="background-position: 85.78088578088578% 0" href="https://github.com/teymour-aldridge">teymour-aldridge
+	</a><a class="contributor svelte-1a6945s" style="background-position: 86.01398601398601% 0" href="https://github.com/TheJaredWilcurt">TheJaredWilcurt
+	</a><a class="contributor svelte-1a6945s" style="background-position: 86.24708624708624% 0" href="https://github.com/theodorejb">theodorejb
+	</a><a class="contributor svelte-1a6945s" style="background-position: 86.48018648018648% 0" href="https://github.com/ThomasFerro">ThomasFerro
+	</a><a class="contributor svelte-1a6945s" style="background-position: 86.7132867132867% 0" href="https://github.com/tiberiuc">tiberiuc
+	</a><a class="contributor svelte-1a6945s" style="background-position: 86.94638694638695% 0" href="https://github.com/Gohlisch">Gohlisch
+	</a><a class="contributor svelte-1a6945s" style="background-position: 87.17948717948718% 0" href="https://github.com/timgates42">timgates42
+	</a><a class="contributor svelte-1a6945s" style="background-position: 87.41258741258741% 0" href="https://github.com/tgroshon">tgroshon
+	</a><a class="contributor svelte-1a6945s" style="background-position: 87.64568764568764% 0" href="https://github.com/tcrowe">tcrowe
+	</a><a class="contributor svelte-1a6945s" style="background-position: 87.87878787878788% 0" href="https://github.com/thelgevold">thelgevold
+	</a><a class="contributor svelte-1a6945s" style="background-position: 88.1118881118881% 0" href="https://github.com/RaiVaibhav">RaiVaibhav
+	</a><a class="contributor svelte-1a6945s" style="background-position: 88.34498834498835% 0" href="https://github.com/VarunDevPro">VarunDevPro
+	</a><a class="contributor svelte-1a6945s" style="background-position: 88.57808857808858% 0" href="https://github.com/Ti-webdev">Ti-webdev
+	</a><a class="contributor svelte-1a6945s" style="background-position: 88.81118881118881% 0" href="https://github.com/venkateshwarans">venkateshwarans
+	</a><a class="contributor svelte-1a6945s" style="background-position: 89.04428904428904% 0" href="https://github.com/FlipFloop">FlipFloop
+	</a><a class="contributor svelte-1a6945s" style="background-position: 89.27738927738928% 0" href="https://github.com/vidaren">vidaren
+	</a><a class="contributor svelte-1a6945s" style="background-position: 89.5104895104895% 0" href="https://github.com/vidit1999">vidit1999
+	</a><a class="contributor svelte-1a6945s" style="background-position: 89.74358974358974% 0" href="https://github.com/SleepyWerewolf">SleepyWerewolf
+	</a><a class="contributor svelte-1a6945s" style="background-position: 89.97668997668998% 0" href="https://github.com/vicky1999">vicky1999
+	</a><a class="contributor svelte-1a6945s" style="background-position: 90.20979020979021% 0" href="https://github.com/supermooshman">supermooshman
+	</a><a class="contributor svelte-1a6945s" style="background-position: 90.44289044289044% 0" href="https://github.com/Vulwsztyn">Vulwsztyn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 90.67599067599068% 0" href="https://github.com/jakutis">jakutis
+	</a><a class="contributor svelte-1a6945s" style="background-position: 90.9090909090909% 0" href="https://github.com/wlockiv">wlockiv
+	</a><a class="contributor svelte-1a6945s" style="background-position: 91.14219114219114% 0" href="https://github.com/yesmeck">yesmeck
+	</a><a class="contributor svelte-1a6945s" style="background-position: 91.37529137529137% 0" href="https://github.com/wjtje">wjtje
+	</a><a class="contributor svelte-1a6945s" style="background-position: 91.60839160839161% 0" href="https://github.com/Spice-Z">Spice-Z
+	</a><a class="contributor svelte-1a6945s" style="background-position: 91.84149184149184% 0" href="https://github.com/Zachiah">Zachiah
+	</a><a class="contributor svelte-1a6945s" style="background-position: 92.07459207459208% 0" href="https://github.com/Zirro">Zirro
+	</a><a class="contributor svelte-1a6945s" style="background-position: 92.3076923076923% 0" href="https://github.com/arggh">arggh
+	</a><a class="contributor svelte-1a6945s" style="background-position: 92.54079254079254% 0" href="https://github.com/eh-dub">eh-dub
+	</a><a class="contributor svelte-1a6945s" style="background-position: 92.77389277389277% 0" href="https://github.com/benib">benib
+	</a><a class="contributor svelte-1a6945s" style="background-position: 93.00699300699301% 0" href="https://github.com/benib">benib
+	</a><a class="contributor svelte-1a6945s" style="background-position: 93.24009324009324% 0" href="https://github.com/btvoidx">btvoidx
+	</a><a class="contributor svelte-1a6945s" style="background-position: 93.47319347319348% 0" href="https://github.com/burningTyger">burningTyger
+	</a><a class="contributor svelte-1a6945s" style="background-position: 93.7062937062937% 0" href="https://github.com/craigglennie">craigglennie
+	</a><a class="contributor svelte-1a6945s" style="background-position: 93.93939393939394% 0" href="https://github.com/decaylala">decaylala
+	</a><a class="contributor svelte-1a6945s" style="background-position: 94.17249417249417% 0" href="https://github.com/dmitrage">dmitrage
+	</a><a class="contributor svelte-1a6945s" style="background-position: 94.4055944055944% 0" href="https://github.com/duarte-pompeu">duarte-pompeu
+	</a><a class="contributor svelte-1a6945s" style="background-position: 94.63869463869464% 0" href="https://github.com/fiskgrodan">fiskgrodan
+	</a><a class="contributor svelte-1a6945s" style="background-position: 94.87179487179488% 0" href="https://github.com/fsinn">fsinn
+	</a><a class="contributor svelte-1a6945s" style="background-position: 95.1048951048951% 0" href="https://github.com/gltchitm">gltchitm
+	</a><a class="contributor svelte-1a6945s" style="background-position: 95.33799533799534% 0" href="https://github.com/hmt">hmt
+	</a><a class="contributor svelte-1a6945s" style="background-position: 95.57109557109557% 0" href="https://github.com/hville">hville
+	</a><a class="contributor svelte-1a6945s" style="background-position: 95.8041958041958% 0" href="https://github.com/igoradamenko">igoradamenko
+	</a><a class="contributor svelte-1a6945s" style="background-position: 96.03729603729603% 0" href="https://github.com/infuzz">infuzz
+	</a><a class="contributor svelte-1a6945s" style="background-position: 96.27039627039628% 0" href="https://github.com/izumiiii">izumiiii
+	</a><a class="contributor svelte-1a6945s" style="background-position: 96.5034965034965% 0" href="https://github.com/jamesgeorge007">jamesgeorge007
+	</a><a class="contributor svelte-1a6945s" style="background-position: 96.73659673659674% 0" href="https://github.com/jasdeepgill">jasdeepgill
+	</a><a class="contributor svelte-1a6945s" style="background-position: 96.96969696969697% 0" href="https://github.com/jpsc">jpsc
+	</a><a class="contributor svelte-1a6945s" style="background-position: 97.2027972027972% 0" href="https://github.com/julian-kuroiwa">julian-kuroiwa
+	</a><a class="contributor svelte-1a6945s" style="background-position: 97.43589743589743% 0" href="https://github.com/zhoukekestar">zhoukekestar
+	</a><a class="contributor svelte-1a6945s" style="background-position: 97.66899766899768% 0" href="https://github.com/kindoflew">kindoflew
+	</a><a class="contributor svelte-1a6945s" style="background-position: 97.9020979020979% 0" href="https://github.com/lonevox">lonevox
+	</a><a class="contributor svelte-1a6945s" style="background-position: 98.13519813519814% 0" href="https://github.com/mellanslag-de">mellanslag-de
+	</a><a class="contributor svelte-1a6945s" style="background-position: 98.36829836829837% 0" href="https://github.com/mellisdesigns">mellisdesigns
+	</a><a class="contributor svelte-1a6945s" style="background-position: 98.6013986013986% 0" href="https://github.com/munrocket">munrocket
+	</a><a class="contributor svelte-1a6945s" style="background-position: 98.83449883449883% 0" href="https://github.com/nhducit">nhducit
+	</a><a class="contributor svelte-1a6945s" style="background-position: 99.06759906759906% 0" href="https://github.com/nomnomnomnom">nomnomnomnom
+	</a><a class="contributor svelte-1a6945s" style="background-position: 99.3006993006993% 0" href="https://github.com/orange4glace">orange4glace
+	</a><a class="contributor svelte-1a6945s" style="background-position: 99.53379953379954% 0" href="https://github.com/priyanjitdey94">priyanjitdey94
+	</a><a class="contributor svelte-1a6945s" style="background-position: 99.76689976689977% 0" href="https://github.com/pynnl">pynnl
+	</a><a class="contributor svelte-1a6945s" style="background-position: 100% 0" href="https://github.com/raveling">raveling
+	</a>
+
+	<p></p>
+
+	<h3>Donors</h3>
+
+	<a class="donor svelte-1xnwmvu" style="background-position: 0% 0" alt="Datawrapper" href="https://opencollective.com/svelte">Datawrapper
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 0.6896551724137931% 0" alt="Frontend Masters" href="https://opencollective.com/svelte">Frontend Masters
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 1.3793103448275863% 0" alt="Dabble" href="https://opencollective.com/svelte">Dabble
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 2.0689655172413794% 0" alt="Avast" href="https://opencollective.com/svelte">Avast
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 2.7586206896551726% 0" alt="Vercel" href="https://opencollective.com/svelte">Vercel
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 3.4482758620689653% 0" alt="Hugging Face" href="https://opencollective.com/svelte">Hugging Face
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 4.137931034482759% 0" alt="Layer0" href="https://opencollective.com/svelte">Layer0
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 4.827586206896552% 0" alt="Matt" href="https://opencollective.com/svelte">Matt
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 5.517241379310345% 0" alt="Kenoxa GmbH" href="https://opencollective.com/svelte">Kenoxa GmbH
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 6.206896551724138% 0" alt="PQINA" href="https://opencollective.com/svelte">PQINA
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 6.896551724137931% 0" alt="The Pudding" href="https://opencollective.com/svelte">The Pudding
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 7.586206896551724% 0" alt="Zev Averbach" href="https://opencollective.com/svelte">Zev Averbach
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 8.275862068965518% 0" alt="Donovan Dikaio" href="https://opencollective.com/svelte">Donovan Dikaio
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 8.96551724137931% 0" alt="INVISR" href="https://opencollective.com/svelte">INVISR
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 9.655172413793103% 0" alt="Jason Hetherington" href="https://opencollective.com/svelte">Jason Hetherington
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 10.344827586206897% 0" alt="Threema Open Source Fund" href="https://opencollective.com/svelte">Threema Open Source Fund
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 11.03448275862069% 0" alt="Jailbreak" href="https://opencollective.com/svelte">Jailbreak
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 11.724137931034482% 0" alt="BuildLab" href="https://opencollective.com/svelte">BuildLab
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 12.413793103448276% 0" alt="David Stevens" href="https://opencollective.com/svelte">David Stevens
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 13.10344827586207% 0" alt="Level Up Tutorials" href="https://opencollective.com/svelte">Level Up Tutorials
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 13.793103448275861% 0" alt="Morgan Williams" href="https://opencollective.com/svelte">Morgan Williams
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 14.482758620689655% 0" alt="Emma Agering" href="https://opencollective.com/svelte">Emma Agering
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 15.172413793103448% 0" alt="Andrew Ewing" href="https://opencollective.com/svelte">Andrew Ewing
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 15.862068965517242% 0" alt="Mike Williams" href="https://opencollective.com/svelte">Mike Williams
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 16.551724137931036% 0" alt="Johan Ronsse" href="https://opencollective.com/svelte">Johan Ronsse
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 17.24137931034483% 0" alt="Svelte School" href="https://opencollective.com/svelte">Svelte School
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 17.93103448275862% 0" alt="Ron Au" href="https://opencollective.com/svelte">Ron Au
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 18.620689655172413% 0" alt="Oskar Oldorf" href="https://opencollective.com/svelte">Oskar Oldorf
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 19.310344827586206% 0" alt="Jacques Delon" href="https://opencollective.com/svelte">Jacques Delon
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 20% 0" alt="Franz Sittampalam" href="https://opencollective.com/svelte">Franz Sittampalam
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 20.689655172413794% 0" alt="Cain Voong" href="https://opencollective.com/svelte">Cain Voong
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 21.379310344827587% 0" alt="Wilson Jimenez" href="https://opencollective.com/svelte">Wilson Jimenez
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 22.06896551724138% 0" alt="Nicky Hajal" href="https://opencollective.com/svelte">Nicky Hajal
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 22.75862068965517% 0" alt="Robert Balfre" href="https://opencollective.com/svelte">Robert Balfre
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 23.448275862068964% 0" alt="Dean Papastrat" href="https://opencollective.com/svelte">Dean Papastrat
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 24.137931034482758% 0" alt="Patrick Szczypinski" href="https://opencollective.com/svelte">Patrick Szczypinski
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 24.82758620689655% 0" alt="Ivan" href="https://opencollective.com/svelte">Ivan
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 25.517241379310345% 0" alt="Rik Schennink" href="https://opencollective.com/svelte">Rik Schennink
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 26.20689655172414% 0" alt="Kennedy Otieno" href="https://opencollective.com/svelte">Kennedy Otieno
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 26.896551724137932% 0" alt="Writers Per Hour" href="https://opencollective.com/svelte">Writers Per Hour
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 27.586206896551722% 0" alt="Scott Tolinski" href="https://opencollective.com/svelte">Scott Tolinski
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 28.275862068965516% 0" alt="Prickle" href="https://opencollective.com/svelte">Prickle
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 28.96551724137931% 0" alt="Scott Spence" href="https://opencollective.com/svelte">Scott Spence
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 29.655172413793103% 0" alt="Slimboyfat" href="https://opencollective.com/svelte">Slimboyfat
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 30.344827586206897% 0" alt="Pier" href="https://opencollective.com/svelte">Pier
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 31.03448275862069% 0" alt="Ryan Atkinson" href="https://opencollective.com/svelte">Ryan Atkinson
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 31.724137931034484% 0" alt="Entriwise" href="https://opencollective.com/svelte">Entriwise
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 32.41379310344828% 0" alt="Noah Glaser" href="https://opencollective.com/svelte">Noah Glaser
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 33.10344827586207% 0" alt="Qwerty ~ Vítězslav Ackermann Ferko" href="https://opencollective.com/svelte">Qwerty ~ Vítězslav Ackermann Ferko
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 33.793103448275865% 0" alt="Doug MacMillan" href="https://opencollective.com/svelte">Doug MacMillan
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 34.48275862068966% 0" alt="SARFEX" href="https://opencollective.com/svelte">SARFEX
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 35.172413793103445% 0" alt="Paulo Vieira" href="https://opencollective.com/svelte">Paulo Vieira
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 35.86206896551724% 0" alt="Chris Dhanaraj" href="https://opencollective.com/svelte">Chris Dhanaraj
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 36.55172413793103% 0" alt="Conor Woods" href="https://opencollective.com/svelte">Conor Woods
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 37.241379310344826% 0" alt="Adam Barrett" href="https://opencollective.com/svelte">Adam Barrett
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 37.93103448275862% 0" alt="BGSL" href="https://opencollective.com/svelte">BGSL
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 38.62068965517241% 0" alt="Craig Aschbrenner" href="https://opencollective.com/svelte">Craig Aschbrenner
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 39.310344827586206% 0" alt="Jorge Morales" href="https://opencollective.com/svelte">Jorge Morales
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 40% 0" alt="Társasház Buda" href="https://opencollective.com/svelte">Társasház Buda
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 40.689655172413794% 0" alt="Nick Breaton" href="https://opencollective.com/svelte">Nick Breaton
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 41.37931034482759% 0" alt="Dzikri Aziz" href="https://opencollective.com/svelte">Dzikri Aziz
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 42.06896551724138% 0" alt="Juanfran" href="https://opencollective.com/svelte">Juanfran
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 42.758620689655174% 0" alt="Andrew Wooldridge" href="https://opencollective.com/svelte">Andrew Wooldridge
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 43.44827586206897% 0" alt="Benoit Jadinon" href="https://opencollective.com/svelte">Benoit Jadinon
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 44.13793103448276% 0" alt="Kiyohito Keeth Kuwahara" href="https://opencollective.com/svelte">Kiyohito Keeth Kuwahara
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 44.827586206896555% 0" alt="Bill Kurtson" href="https://opencollective.com/svelte">Bill Kurtson
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 45.51724137931034% 0" alt="Bobby Cusicanqui" href="https://opencollective.com/svelte">Bobby Cusicanqui
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 46.206896551724135% 0" alt="James Nisbet" href="https://opencollective.com/svelte">James Nisbet
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 46.89655172413793% 0" alt="Nick Wing" href="https://opencollective.com/svelte">Nick Wing
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 47.58620689655172% 0" alt="Cole Page" href="https://opencollective.com/svelte">Cole Page
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 48.275862068965516% 0" alt="Brad Dougherty" href="https://opencollective.com/svelte">Brad Dougherty
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 48.96551724137931% 0" alt="Andrey Sitnik" href="https://opencollective.com/svelte">Andrey Sitnik
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 49.6551724137931% 0" alt="Yann Bougaret" href="https://opencollective.com/svelte">Yann Bougaret
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 50.3448275862069% 0" alt="linux_china" href="https://opencollective.com/svelte">linux_china
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 51.03448275862069% 0" alt="Johannes Gehrs" href="https://opencollective.com/svelte">Johannes Gehrs
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 51.724137931034484% 0" alt="ERGON Datenprojekte GmbH" href="https://opencollective.com/svelte">ERGON Datenprojekte GmbH
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 52.41379310344828% 0" alt="Johannes Mutter" href="https://opencollective.com/svelte">Johannes Mutter
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 53.10344827586207% 0" alt="John Schottler" href="https://opencollective.com/svelte">John Schottler
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 53.793103448275865% 0" alt="Steve James" href="https://opencollective.com/svelte">Steve James
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 54.48275862068966% 0" alt="Moritz Stefaner" href="https://opencollective.com/svelte">Moritz Stefaner
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 55.172413793103445% 0" alt="Salesforce" href="https://opencollective.com/svelte">Salesforce
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 55.86206896551724% 0" alt="Eric Lanehart" href="https://opencollective.com/svelte">Eric Lanehart
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 56.55172413793103% 0" alt="Peach Perfect Weddings Ltd" href="https://opencollective.com/svelte">Peach Perfect Weddings Ltd
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 57.241379310344826% 0" alt="Maximilian Franzke" href="https://opencollective.com/svelte">Maximilian Franzke
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 57.93103448275862% 0" alt="Felix Hungenberg" href="https://opencollective.com/svelte">Felix Hungenberg
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 58.62068965517241% 0" alt="Careswitch" href="https://opencollective.com/svelte">Careswitch
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 59.310344827586206% 0" alt="Andrew Chou" href="https://opencollective.com/svelte">Andrew Chou
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 60% 0" alt="Doomd" href="https://opencollective.com/svelte">Doomd
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 60.689655172413794% 0" alt="Widgetic" href="https://opencollective.com/svelte">Widgetic
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 61.37931034482759% 0" alt="Jonas Musekura Lundsholm" href="https://opencollective.com/svelte">Jonas Musekura Lundsholm
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 62.06896551724138% 0" alt="Dana Woodman" href="https://opencollective.com/svelte">Dana Woodman
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 62.758620689655174% 0" alt="Julian Burgess" href="https://opencollective.com/svelte">Julian Burgess
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 63.44827586206897% 0" alt="Jimmy Gee" href="https://opencollective.com/svelte">Jimmy Gee
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 64.13793103448276% 0" alt="Jon Telles" href="https://opencollective.com/svelte">Jon Telles
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 64.82758620689656% 0" alt="Sid nagavarapu" href="https://opencollective.com/svelte">Sid nagavarapu
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 65.51724137931035% 0" alt="Carlos Saltos" href="https://opencollective.com/svelte">Carlos Saltos
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 66.20689655172414% 0" alt="Sebastian Zürcher" href="https://opencollective.com/svelte">Sebastian Zürcher
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 66.89655172413794% 0" alt="Álvaro Domínguez López" href="https://opencollective.com/svelte">Álvaro Domínguez López
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 67.58620689655173% 0" alt="Steven Yung" href="https://opencollective.com/svelte">Steven Yung
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 68.27586206896552% 0" alt="Alex Hortopan" href="https://opencollective.com/svelte">Alex Hortopan
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 68.96551724137932% 0" alt="Henrique Doro" href="https://opencollective.com/svelte">Henrique Doro
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 69.65517241379311% 0" alt="ptkdev" href="https://opencollective.com/svelte">ptkdev
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 70.34482758620689% 0" alt="Efe Erdoğru" href="https://opencollective.com/svelte">Efe Erdoğru
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 71.03448275862068% 0" alt="John Scott" href="https://opencollective.com/svelte">John Scott
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 71.72413793103448% 0" alt="Alessandro Segala" href="https://opencollective.com/svelte">Alessandro Segala
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 72.41379310344827% 0" alt="Nathan Doyle" href="https://opencollective.com/svelte">Nathan Doyle
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 73.10344827586206% 0" alt="Riversweeps" href="https://opencollective.com/svelte">Riversweeps
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 73.79310344827586% 0" alt="DigitalOcean" href="https://opencollective.com/svelte">DigitalOcean
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 74.48275862068965% 0" alt="brunnerh" href="https://opencollective.com/svelte">brunnerh
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 75.17241379310344% 0" alt="Candido Sales Gomes" href="https://opencollective.com/svelte">Candido Sales Gomes
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 75.86206896551724% 0" alt="Scott Anthony Robson" href="https://opencollective.com/svelte">Scott Anthony Robson
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 76.55172413793103% 0" alt="Razvan Tanase" href="https://opencollective.com/svelte">Razvan Tanase
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 77.24137931034483% 0" alt="Sean Clarke" href="https://opencollective.com/svelte">Sean Clarke
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 77.93103448275862% 0" alt="Oscar Quinteros" href="https://opencollective.com/svelte">Oscar Quinteros
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 78.62068965517241% 0" alt="Julia Ogris" href="https://opencollective.com/svelte">Julia Ogris
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 79.3103448275862% 0" alt="Sasha Sushko" href="https://opencollective.com/svelte">Sasha Sushko
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 80% 0" alt="Aaron Eischeid" href="https://opencollective.com/svelte">Aaron Eischeid
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 80.6896551724138% 0" alt="Piyush" href="https://opencollective.com/svelte">Piyush
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 81.37931034482759% 0" alt="Niklas Heer" href="https://opencollective.com/svelte">Niklas Heer
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 82.06896551724138% 0" alt="Alex Bruno Cáceres" href="https://opencollective.com/svelte">Alex Bruno Cáceres
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 82.75862068965517% 0" alt="Carlo Dell&#39;Acqua" href="https://opencollective.com/svelte">Carlo Dell&#39;Acqua
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 83.44827586206897% 0" alt="kadevland" href="https://opencollective.com/svelte">kadevland
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 84.13793103448276% 0" alt="Paul Glezen" href="https://opencollective.com/svelte">Paul Glezen
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 84.82758620689656% 0" alt="Ajit Krishna" href="https://opencollective.com/svelte">Ajit Krishna
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 85.51724137931035% 0" alt="Rexford Nyarko Nkansah" href="https://opencollective.com/svelte">Rexford Nyarko Nkansah
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 86.20689655172414% 0" alt="Korakot Chaovavanich" href="https://opencollective.com/svelte">Korakot Chaovavanich
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 86.89655172413794% 0" alt="Kirill Vasiltsov" href="https://opencollective.com/svelte">Kirill Vasiltsov
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 87.58620689655173% 0" alt="Aaron Moy" href="https://opencollective.com/svelte">Aaron Moy
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 88.27586206896552% 0" alt="Jakov Kovač" href="https://opencollective.com/svelte">Jakov Kovač
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 88.96551724137932% 0" alt="gengns" href="https://opencollective.com/svelte">gengns
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 89.65517241379311% 0" alt="Kostadin Terziev" href="https://opencollective.com/svelte">Kostadin Terziev
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 90.34482758620689% 0" alt="Radu" href="https://opencollective.com/svelte">Radu
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 91.03448275862068% 0" alt="Ross Hill" href="https://opencollective.com/svelte">Ross Hill
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 91.72413793103448% 0" alt="NodeArt" href="https://opencollective.com/svelte">NodeArt
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 92.41379310344827% 0" alt="nimmneun" href="https://opencollective.com/svelte">nimmneun
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 93.10344827586206% 0" alt="Alexandre CANTIN" href="https://opencollective.com/svelte">Alexandre CANTIN
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 93.79310344827586% 0" alt="Garrett Saxon" href="https://opencollective.com/svelte">Garrett Saxon
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 94.48275862068965% 0" alt="Reiza Haniff" href="https://opencollective.com/svelte">Reiza Haniff
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 95.17241379310344% 0" alt="Carlo Corradini" href="https://opencollective.com/svelte">Carlo Corradini
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 95.86206896551724% 0" alt="Bruno Canini" href="https://opencollective.com/svelte">Bruno Canini
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 96.55172413793103% 0" alt="GoMage" href="https://opencollective.com/svelte">GoMage
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 97.24137931034483% 0" alt="Vladislav Polyakov" href="https://opencollective.com/svelte">Vladislav Polyakov
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 97.93103448275862% 0" alt="Thiago Lagden Magalhães" href="https://opencollective.com/svelte">Thiago Lagden Magalhães
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 98.62068965517241% 0" alt="lanset" href="https://opencollective.com/svelte">lanset
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 99.3103448275862% 0" alt="Dong-won Jeffrey Lee" href="https://opencollective.com/svelte">Dong-won Jeffrey Lee
+	</a><a class="donor svelte-1xnwmvu" style="background-position: 100% 0" alt="Mihael Mutic" href="https://opencollective.com/svelte">Mihael Mutic
+	</a></section>
+</main>
+
+
+
+			
+		</div>
+</body>
+</html>
